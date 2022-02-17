@@ -17,8 +17,8 @@ import org.springframework.stereotype.Component;
 )//@Component가 붙은것을 전부 빈으로 등록
 public class AutoAppConfig {
 
-    @Bean(name="memoryMemberRepository")
-    MemberRepository memberRepository(){
-        return new MemoryMemberRepository();
-    }
+//    @Bean(name="memoryMemberRepository")
+//    MemberRepository memberRepository(){
+//        return new MemoryMemberRepository();
+//    }
 }
