@@ -1,5 +1,7 @@
 package hello2.core2.autowired;
 
+import hello2.core2.AutoAppConfig;
+import hello2.core2.discount.DiscountPolicy;
 import hello2.core2.member.Member;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,5 +36,11 @@ public class AutowiredTest {
         public void setNoBean3(Optional<Member> noBean3){
             System.out.println("noBean3 = " + noBean3);
         }
+    }
+
+    @Test
+    public void tempTest() throws Exception{
+        ApplicationContext ac = new AnnotationConfigApplicationContext(AutoAppConfig.class);
+        DiscountPolicy discountPolicy = ac.getBean(DiscountPolicy.class);
     }
 }

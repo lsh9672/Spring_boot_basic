@@ -25,10 +25,6 @@ public class ApplicationContextSameBeanFindTest {
     @Test
     @DisplayName("타입으로 조회시 같은 타입이 둘 이상 있으면, 중복 오류가 발생한다")
     public void findBeanByTypeDuplicate() throws Exception{
-        //give
-//        MemberRepository bean = ac.getBean(MemberRepository.class);
-        //when
-        //then
         assertThrows(NoUniqueBeanDefinitionException.class,
                 ()->ac.getBean(MemberRepository.class));
     }
@@ -36,10 +32,7 @@ public class ApplicationContextSameBeanFindTest {
     @Test
     @DisplayName("타입으로 조회시 같은 타입이 둘 이상 있으면, 빈 이름을 지정하면 된다.")
     public void findBeanByName() throws Exception{
-        //give
         MemberRepository bean = ac.getBean("memberRepository",MemberRepository.class);
-        //when
-        //then
         assertThat(bean).isInstanceOf(MemberRepository.class);
     }
 
@@ -54,8 +47,6 @@ public class ApplicationContextSameBeanFindTest {
 
         System.out.println("beansOfType = " + beansOfType);
         assertThat(beansOfType.size()).isEqualTo(2);
-        //when
-        //then
     }
 
     @Configuration

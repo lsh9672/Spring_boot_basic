@@ -28,7 +28,6 @@ class ApplicationContextInfoTest {
     @Test
     @DisplayName("애플리케이션 빈 출력하기")
     public void findApplicationBean() throws Exception{
-        //give
         String[] beanDefinitionNames = ac.getBeanDefinitionNames();
         for (String beanDefinitionName : beanDefinitionNames) {
             BeanDefinition beanDefinition = ac.getBeanDefinition(beanDefinitionName);
@@ -40,7 +39,5 @@ class ApplicationContextInfoTest {
                 System.out.println("beanDefinition = " + beanDefinitionName +" object = "+ bean);
             }
         }
-        //when
-        //then
     }
 }
