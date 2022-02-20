@@ -11,5 +11,7 @@
 ### 섹션 5. https://www.notion.so/5-5f462d47330344bf8f09786ad9201c10
 ### 섹션 6. https://www.notion.so/6-6ea489c1227643c89c523ebb4e05ae02
 ### 섹션 7. https://www.notion.so/7-582e6b92d1fd407aaf1c1314aad50466
+### 섹션 8. https://www.notion.so/8-27541afd0644429798721af807633213
+### 섹션 9. https://www.notion.so/9-0ef8f3b2e6f146f2b3911c2af2f9b864
 
 

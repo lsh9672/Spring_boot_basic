@@ -3,6 +3,9 @@ package hello2.core2.lifecycle;
 //import org.springframework.beans.factory.DisposableBean;
 //import org.springframework.beans.factory.InitializingBean;
 
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
@@ -63,17 +66,17 @@ public class NetworkClient{
 
     /*
     * 외부라이브러리에는 적용불가, 다른 상황에서는 이것을 쓰면됨.*/
-    @PostConstruct
-    public void init(){
-        System.out.println("NetworkClient.init");
-        connect();
-        call("초기화 연결 메시지");
-    }
-    @PreDestroy
-    public void close() {
-        System.out.println("NetworkClient.close");
-        disconnect();
-    }
+//    @PostConstruct
+//    public void init(){
+//        System.out.println("NetworkClient.init");
+//        connect();
+//        call("초기화 연결 메시지");
+//    }
+//    @PreDestroy
+//    public void close() {
+//        System.out.println("NetworkClient.close");
+//        disconnect();
+//    }
 
 
 }
